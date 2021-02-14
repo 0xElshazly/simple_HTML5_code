@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Assignment</title>
+    <style>
+      table{
+        width: 100% ;
+        border: 2px solid #000000;
+        border-top: 0;
+        font-size: 1.5em;
+      }
+      table caption {
+        padding: 10px;
+        
+        border: 2px solid #000000;
+      }
+      table td,th {
+        padding: 10px;
+        border: 2px solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      ( caption - thead - tbody - tfoot )
+      tr => Table Row
+      td => Table Data Cell
+      th => Table Header Cell
+    -->
+    <h1>Table</h1>
+    <table>
+      <caption>Information</caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Profile</th>
+          <th>Avatar</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>1</td>
+            <td>Ayman</td>
+            <td>Said</td>
+            <td>Male</td>
+            <td>ay@gmail.com</td>
+            <td><a href="#">Facebook</a></td>
+            <td><img src="http://via.placeholder.com/40" alt="placeholder"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Rana</td>
+            <td>Fekrey</td>
+            <td>Female</td>
+            <td>ra@gmail.com</td>
+            <td><a href="#">Twitter</a></td>
+            <td><img src="http://via.placeholder.com/40" alt="placeholder"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td rowspan="2">Ahmed</td>
+            <td>Essam</td>
+            <td rowspan="2">Male</td>
+            <td>sa@gmail.com</td>
+            <td><a href="#">Instagram</a></td>
+            <td rowspan="2"><img src="http://via.placeholder.com/80" alt="placeholder"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Shaban</td>
+            <td>ah@gmail.com</td>
+            <td><a href="#">Google</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Laila</td>
+            <td>Zaher</td>
+            <td>Female</td>
+            <td>la@gmail.com</td>
+            <td><a href="#">LinkedIn</a></td>
+            <td><img src="http://via.placeholder.com/40" alt="placeholder"></td>
+          </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">Total Members</td>
+          <td>5</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
